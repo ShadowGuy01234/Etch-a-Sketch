@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+.canvas {
+    display: flex;
+}
