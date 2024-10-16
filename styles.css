@@ -5,11 +5,17 @@ body {
 .grid {
     display: flex;
     flex-direction: column;
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border: 1px solid black;
 }
 
 .canvas {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid:hover {
+    background-color: aqua;
 }
