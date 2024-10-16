@@ -1,16 +1,14 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+    // let n = prompt("Choose grid: ");
     const canvas = document.querySelector(".canvas");
-    for(let i = 0; i < 3; i++) {
-        for (let j = 0; j < 3; j++) {
+    for(let i = 0; i < n; i++) {
+        let newDiv = document.createElement("div");
+        for (let j = 0; j < n; j++) {
             let div = document.createElement(`div${i}`);
             div.classList.add("grid");
-            canvas.appendChild(div, {i});
+            newDiv.appendChild(div, {i});
         }
-        // TODO: figure out a way to get these divs inside a div
-
-        // let newDiv = document.createElement("div");
-        // canvas.appendChild(newDiv);
-        
+        canvas.appendChild(newDiv);
     }
 });
