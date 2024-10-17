@@ -2,7 +2,7 @@ body {
     margin: 0px;
 }
 
-.grid {
+.div {
     display: flex;
     flex-direction: column;
     width: 30px;
@@ -16,6 +16,6 @@ body {
     align-items: center;
 }
 
-.grid:hover {
+.div:hover{
     background-color: aqua;
 }
