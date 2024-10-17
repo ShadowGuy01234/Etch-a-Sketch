@@ -2,7 +2,7 @@ function colorOnClick() {
     document.addEventListener("DOMContentLoaded", ()=> {
         let divs = document.querySelectorAll(".div");
         divs.forEach((div) => {
-            div.addEventListener("click", (e) => {
+            div.addEventListener("click", () => {
                 div.style.backgroundColor = "aqua";
             });
         });
