@@ -14,8 +14,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.div:hover{
-    background-color: aqua;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
