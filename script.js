@@ -25,16 +25,6 @@
 
 
 
-// function colorChoose() {
-//     document.addEventListener("DOMContentLoaded", () => {
-//         let color = document.querySelector(".color");
-//         let nowColor = color.value;
-//         console.log(nowColor);  
-//     });
-// }
-
-
-
 let colors = [
     '#a52a2a', '#dcae96', '#800000', '#b03060', '#8b3a62', '#800020', '#fff4db', 
     '#789868', '#696ac9', '#e6c986', '#1e203b', '#b52e25', '#2c2d61', 
@@ -44,8 +34,8 @@ let colors = [
     '#e1dfdf','#668c6f', '#e5d5bb','#c46316', '#da413c','#5b2c34', '#c8a2c8', '#8fb0a9',
 ];
 
-function randonColorOnHover() {
-    document.addEventListener("DOMContentLoaded", () => {
+
+function randomColorOnHover() {
         let divs = document.querySelectorAll(".div");
         divs.forEach((div) => {
             let randomColor = colors[(Math.floor(Math.random() * colors.length))];
@@ -53,25 +43,28 @@ function randonColorOnHover() {
                 div.style.backgroundColor = randomColor;
             });
         });
-    })
-}
+    };
+
 
 function colorOnHover() {
-    document.addEventListener("DOMContentLoaded", () => {
         let divs = document.querySelectorAll(".div");
         divs.forEach((div) => {
             div.addEventListener("mouseenter", () => {
                 div.style.backgroundColor = "aqua";
             });
         });
-    });
-}
+    };
+
 
 
 function grid() {
     document.addEventListener("DOMContentLoaded", () => {
-        let gridSize = 16;
         const canvas = document.querySelector(".canvas");
+        let btn = document.querySelector(".btnSize");
+        btn.addEventListener("click", () => {
+        let newSize = document.querySelector(".size");
+        let gridSize = parseInt(newSize.value);
+        canvas.innerHTML = '';
         for(let i = 0; i < gridSize; i++) {
             let newDiv = document.createElement("div");
             for (let j = 0; j < gridSize; j++) {
@@ -81,14 +74,13 @@ function grid() {
             }
             canvas.appendChild(newDiv);
         }
+        // colorOnHover();
+        randomColorOnHover();
+        })
     });
 }
 
 
-
-
 grid();
-colorOnHover();
-// colorOnClick();
-// randonColorOnClick();
-// randomColorOnHover();
+// colorOnHover();
+randomColorOnHover();
