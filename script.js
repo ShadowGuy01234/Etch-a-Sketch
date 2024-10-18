@@ -21,7 +21,13 @@
 //     });
 // }
 
-
+// function colorChoose() {
+//     document.addEventListener("DOMContentLoaded", () => {
+//         let color = document.querySelector(".color");
+//         let nowColor = color.value;
+//         console.log(nowColor);  
+//     });
+// }
 
 let colors = [
     '#a52a2a', '#dcae96', '#800000', '#b03060', '#8b3a62', '#800020', '#fff4db', 
