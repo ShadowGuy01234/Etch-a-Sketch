@@ -1,13 +1,13 @@
-function colorOnClick() {
-    document.addEventListener("DOMContentLoaded", ()=> {
-        let divs = document.querySelectorAll(".div");
-        divs.forEach((div) => {
-            div.addEventListener("click", () => {
-                div.style.backgroundColor = "aqua";
-            });
-        });
-    });
-}
+// function colorOnClick() {
+//     document.addEventListener("DOMContentLoaded", ()=> {
+//         let divs = document.querySelectorAll(".div");
+//         divs.forEach((div) => {
+//             div.addEventListener("click", () => {
+//                 div.style.backgroundColor = "aqua";
+//             });
+//         });
+//     });
+// }
 
 let colors = [
     '#a52a2a', '#dcae96', '#800000', '#b03060', '#8b3a62', '#800020', '#fff4db', 
@@ -18,17 +18,17 @@ let colors = [
     '#e1dfdf','#668c6f', '#e5d5bb','#c46316', '#da413c','#5b2c34', '#c8a2c8', '#8fb0a9',
 ];
 
-function randomColorOnHover() {
-    document.addEventListener("DOMContentLoaded", () => {
-        let divs = document.querySelectorAll(".div");
-        divs.forEach((div) => {
-            let randomColor = colors[(Math.floor(Math.random() * colors.length))];
-            div.addEventListener("click", () => {
-                div.style.backgroundColor = randomColor;
-            });
-        });
-    });
-}
+// function randomColorOnClick() {
+//     document.addEventListener("DOMContentLoaded", () => {
+//         let divs = document.querySelectorAll(".div");
+//         divs.forEach((div) => {
+//             let randomColor = colors[(Math.floor(Math.random() * colors.length))];
+//             div.addEventListener("click", () => {
+//                 div.style.backgroundColor = randomColor;
+//             });
+//         });
+//     });
+// }
 
 function randonColorOnHover() {
     document.addEventListener("DOMContentLoaded", () => {
@@ -48,11 +48,6 @@ function colorOnHover() {
         divs.forEach((div) => {
             div.addEventListener("mouseenter", () => {
                 div.style.backgroundColor = "aqua";
-            });
-        });
-        divs.forEach((div) => {
-            div.addEventListener("mouseleave", () => {
-                div.style.backgroundColor = "white";
             });
         });
     });
@@ -76,7 +71,7 @@ function grid() {
 }
 
 grid();
-colorOnClick();
 colorOnHover();
-// randonColorOnHover();
+// colorOnClick();
+// randonColorOnClick();
 // randomColorOnHover();
