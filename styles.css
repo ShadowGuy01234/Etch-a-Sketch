@@ -14,6 +14,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+}
+
+.color {
+    box-sizing: border-box;
+    align-self: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    padding: 0px;
+    border: 1px solid black ;
+}
+
+.btnColor, .btnRandom, .btnEraser, .btnReset {
+    background-color:cyan;
+    min-height: 38px;
+    min-width: auto;
+    border-radius: 18px;
+    border: 3px solid black;
+    font-weight: 800;
+    flex-basis: 38px;
 }
