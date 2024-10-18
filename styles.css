@@ -40,7 +40,7 @@ body {
     border: 5px transparent ;
 }
 
-.btnColor, .btnRandom, .btnEraser, .btnReset {
+.btnColor, .btnRandom, .btnEraser, .btnReset, .btnSize {
     background-color:cyan;
     min-height: 38px;
     min-width: auto;
@@ -50,8 +50,21 @@ body {
     flex-basis: 38px;
 }
 
+.size {
+    max-width: 40px;
+    height: 30px;
+    font-weight: 900;
+    border-radius: 50%;
+    text-align: center;
+    border: 3px solid black;
+}
 
- /* Implementation to be decided */
-/* .btnColor:active , .btnRandom:active , .btnEraser:active , .btnReset:active {
+.sizeLable {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+.btnColor:active , .btnRandom:active , .btnEraser:active , .btnReset:active, .btnSize:active {
     background-color:blue;
-} */
+}

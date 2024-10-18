@@ -9,6 +9,8 @@
 //     });
 // }
 
+
+
 // function randomColorOnClick() {
 //     document.addEventListener("DOMContentLoaded", () => {
 //         let divs = document.querySelectorAll(".div");
@@ -21,6 +23,8 @@
 //     });
 // }
 
+
+
 // function colorChoose() {
 //     document.addEventListener("DOMContentLoaded", () => {
 //         let color = document.querySelector(".color");
@@ -28,6 +32,8 @@
 //         console.log(nowColor);  
 //     });
 // }
+
+
 
 let colors = [
     '#a52a2a', '#dcae96', '#800000', '#b03060', '#8b3a62', '#800020', '#fff4db', 
