@@ -60,9 +60,13 @@ function colorOnHover() {
 function grid() {
     document.addEventListener("DOMContentLoaded", () => {
         const canvas = document.querySelector(".canvas");
+        let valueDisplay = document.querySelector(".sizeValue");
         let btn = document.querySelector(".btnSize");
-        btn.addEventListener("click", () => {
         let newSize = document.querySelector(".size");
+        newSize.addEventListener("input", () => {
+            valueDisplay.innerHTML = `${ newSize.value}x${ newSize.value}`;
+        });
+        btn.addEventListener("click", () => {
         let gridSize = parseInt(newSize.value);
         canvas.innerHTML = '';
         for(let i = 0; i < gridSize; i++) {
@@ -74,8 +78,8 @@ function grid() {
             }
             canvas.appendChild(newDiv);
         }
-        // colorOnHover();
-        randomColorOnHover();
+        colorOnHover();
+        // randomColorOnHover();
         })
     });
 }
@@ -83,4 +87,4 @@ function grid() {
 
 grid();
 // colorOnHover();
-randomColorOnHover();
+// randomColorOnHover();
