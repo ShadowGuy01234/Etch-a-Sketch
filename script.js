@@ -1,28 +1,3 @@
-// function colorOnClick() {
-//     document.addEventListener("DOMContentLoaded", ()=> {
-//         let divs = document.querySelectorAll(".div");
-//         divs.forEach((div) => {
-//             div.addEventListener("click", () => {
-//                 div.style.backgroundColor = "aqua";
-//             });
-//         });
-//     });
-// }
-
-
-
-// function randomColorOnClick() {
-//     document.addEventListener("DOMContentLoaded", () => {
-//         let divs = document.querySelectorAll(".div");
-//         divs.forEach((div) => {
-//             let randomColor = colors[(Math.floor(Math.random() * colors.length))];
-//             div.addEventListener("click", () => {
-//                 div.style.backgroundColor = randomColor;
-//             });
-//         });
-//     });
-// }
-
 
 
 let colors = [
@@ -34,12 +9,22 @@ let colors = [
     '#e1dfdf','#668c6f', '#e5d5bb','#c46316', '#da413c','#5b2c34', '#c8a2c8', '#8fb0a9',
 ];
 
+function clearHoverListeners() {
+    const divs = document.querySelectorAll(".div");
+    divs.forEach(div => {
+        let newDiv = div.cloneNode(true);
+        div.replaceWith(newDiv);
+    });
+};
+
 
 function randomColorOnHover() {
+        clearHoverListeners();
+
         let divs = document.querySelectorAll(".div");
         divs.forEach((div) => {
-            let randomColor = colors[(Math.floor(Math.random() * colors.length))];
             div.addEventListener("mouseover", () => {
+                let randomColor = colors[(Math.floor(Math.random() * colors.length))];
                 div.style.backgroundColor = randomColor;
             });
         });
@@ -47,6 +32,8 @@ function randomColorOnHover() {
 
 
 function colorOnHover() {
+        clearHoverListeners();
+
         let divs = document.querySelectorAll(".div");
         divs.forEach((div) => {
             div.addEventListener("mouseenter", () => {
@@ -63,9 +50,9 @@ function grid() {
         let valueDisplay = document.querySelector(".sizeValue");
         let newSize = document.querySelector(".size");
         newSize.addEventListener("input", () => {
-            valueDisplay.innerHTML = `${ newSize.value}x${ newSize.value}`;
-            let gridSize = parseInt(newSize.value);
-            let size =  500 / gridSize; 
+        valueDisplay.innerHTML = `${ newSize.value}x${ newSize.value}`;
+        let gridSize = parseInt(newSize.value);
+        let size =  500 / gridSize;
         canvas.innerHTML = '';
         for(let i = 1; i <= gridSize; i++) {
             let newDiv = document.createElement("div");
@@ -78,12 +65,19 @@ function grid() {
             }
             canvas.appendChild(newDiv);
         }
-        colorOnHover();
+        
+        // colorOnHover();
         // randomColorOnHover();
         })
     });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const color = document.querySelector(".btnColor"); 
+    const randomColor = document.querySelector(".btnRandom"); 
+    color.addEventListener("click", colorOnHover);
+    randomColor.addEventListener("click", randomColorOnHover);
+});
 
 grid();
 // colorOnHover();

@@ -16,7 +16,7 @@ body {
     height:500px;
     max-width: 500px;
     max-height:500px;
-    border: 7px solid;
+    border: 7px solid rgb(196, 56, 56);
     overflow: hidden;
 }
 
