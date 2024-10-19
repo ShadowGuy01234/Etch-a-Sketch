@@ -61,19 +61,19 @@ function grid() {
     document.addEventListener("DOMContentLoaded", () => {
         const canvas = document.querySelector(".canvas");
         let valueDisplay = document.querySelector(".sizeValue");
-        let btn = document.querySelector(".btnSize");
         let newSize = document.querySelector(".size");
         newSize.addEventListener("input", () => {
             valueDisplay.innerHTML = `${ newSize.value}x${ newSize.value}`;
-        });
-        btn.addEventListener("click", () => {
-        let gridSize = parseInt(newSize.value);
+            let gridSize = parseInt(newSize.value);
+            let size =  500 / gridSize; 
         canvas.innerHTML = '';
-        for(let i = 0; i < gridSize; i++) {
+        for(let i = 1; i <= gridSize; i++) {
             let newDiv = document.createElement("div");
-            for (let j = 0; j < gridSize; j++) {
+            for (let j = 1; j <= gridSize; j++) {
                 let div = document.createElement(`div`);
                 div.classList.add("div");
+                div.style.width = `${size}px`;
+                div.style.height = `${size}px`;
                 newDiv.appendChild(div);
             }
             canvas.appendChild(newDiv);
