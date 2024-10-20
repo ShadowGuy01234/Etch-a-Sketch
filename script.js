@@ -13,9 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const color = document.querySelector(".btnColor"); 
     const randomColor = document.querySelector(".btnRandom");
     const reset = document.querySelector(".btnReset");
+    const eraser = document.querySelector(".btnEraser");
     color.addEventListener("click", colorOnHover);
     randomColor.addEventListener("click", randomColorOnHover);
     reset.addEventListener("click", resetGrid);
+    eraser.addEventListener("click", eraseGrid);
 });
 
 function clearHoverListeners() {
@@ -51,6 +53,16 @@ function colorOnHover() {
             });
         });
     }
+
+function eraseGrid() {
+    clearHoverListeners();
+    let divs = document.querySelectorAll(".div");
+    divs.forEach((div) => {
+        div.addEventListener("mouseenter", () => {
+            div.style.backgroundColor = "white";
+        });
+    });
+}
 
 function resetGrid() {
     clearHoverListeners();
