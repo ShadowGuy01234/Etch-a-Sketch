@@ -14,16 +14,17 @@ HTML: Structure of the web page
 CSS: Styling the canvas and controls
 JavaScript: Adding interactivity to the canvas
 How to Use 🚀
+
 Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/etch-a-sketch.git
+
+```git clone https://github.com/your-username/etch-a-sketch.git```
+
 Open the project folder:
-bash
-Copy code
-cd etch-a-sketch
-Open index.html in your browser to start drawing.
-Preview 🖼️
+
+```cd etch-a-sketch```
+
+Open ```index.html``` in your browser to start drawing.
+Preview 🖼
 ![Screenshot from 2024-10-20 20-58-18](https://github.com/user-attachments/assets/86b447da-02c5-4246-89b0-d0c2d9140a3b)
 
 
