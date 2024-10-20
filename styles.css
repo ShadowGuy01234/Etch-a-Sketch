@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    background-image: url('wallhaven-qzy17d_1920x1080.png');
 }
 
 .div {
@@ -16,14 +17,17 @@ body {
     height:500px;
     max-width: 500px;
     max-height:500px;
-    border: 7px solid rgb(196, 56, 56);
     overflow: hidden;
+    cursor: crosshair;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
+    gap: 250px;
+    margin-top: 5%;
 }
 
 .ui {
@@ -39,6 +43,7 @@ body {
     border-radius: 100%;
     width: 50px;
     height: 50px;
+    cursor: pointer;
     background-color: transparent;
     padding: 0px;
     border: 5px transparent ;
@@ -52,11 +57,13 @@ body {
     border: 3px solid black;
     font-weight: 800;
     flex-basis: 38px;
+    cursor: pointer;
 }
 
 .size {
     height: 30px;
     display: flex;
+    cursor: grab;
 }
 
 .sizeLable {
@@ -77,5 +84,12 @@ body {
 .clr {
     display: flex;
     gap: 16px;
+}
+
+.header {
+    font-family: sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
 }
 

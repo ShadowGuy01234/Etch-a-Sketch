@@ -59,7 +59,7 @@ function eraseGrid() {
     let divs = document.querySelectorAll(".div");
     divs.forEach((div) => {
         div.addEventListener("mouseenter", () => {
-            div.style.backgroundColor = "white";
+            div.style.backgroundColor = "transparent";
         });
     });
 }
@@ -68,7 +68,7 @@ function resetGrid() {
     clearHoverListeners();
     let divs = document.querySelectorAll(".div");
     divs.forEach((div) => {
-            div.style.backgroundColor = "white";
+            div.style.backgroundColor = "transparent";
     });
 } 
 
