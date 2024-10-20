@@ -4,36 +4,36 @@ A web-based drawing application inspired by the classic Etch-a-Sketch toy! This 
 
 Features ✨
 
-Responsive Canvas: Draw on the canvas with smooth mouse movements.
+-Responsive Canvas: Draw on the canvas with smooth mouse movements.
 
-Color Picker: Choose any color to draw with.
+-Color Picker: Choose any color to draw with.
 
-Grid Customization: Adjust the size of the canvas grid.
+-Grid Customization: Adjust the size of the canvas grid.
 
-Eraser Tool: Clear parts of the drawing.
+-Eraser Tool: Clear parts of the drawing.
 
-Reset Button: Clear the entire canvas and start fresh.
+-Reset Button: Clear the entire canvas and start fresh.
 
 
 Technologies Used 🛠️
 
-HTML: Structure of the web page
+-HTML: Structure of the web page
 
-CSS: Styling the canvas and controls
+-CSS: Styling the canvas and controls
 
-JavaScript: Adding interactivity to the canvas
+-JavaScript: Adding interactivity to the canvas
 
 How to Use 🚀
 
-Clone the repository:
+1. Clone the repository:
 
 ```git clone https://github.com/your-username/etch-a-sketch.git```
 
-Open the project folder:
+2. Open the project folder:
 
 ```cd etch-a-sketch```
 
-Open ```index.html``` in your browser to start drawing.
+3. Open ```index.html``` in your browser to start drawing.
 
 
 Preview 🖼
@@ -43,13 +43,13 @@ Preview 🖼
 
 Future Improvements 🚧
 
-Add undo/redo functionality.
+-Add undo/redo functionality.
 
-Save the canvas as an image file.
+-Save the canvas as an image file.
 
-Mobile-friendly version for touch screens.
+-Mobile-friendly version for touch screens.
 
-Support for different brush shapes and patterns.
+-Support for different brush shapes and patterns.
 
 Contributing 🤝
 
