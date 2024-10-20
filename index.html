@@ -10,14 +10,17 @@
 <body>
     <div class="container">
         <div class="ui">
-            <input type="color" class="color">
+            <div class="clr">
+                <input type="color" class="color">
+                <button class="btnColor">OK</button>
+            </div>
             <button class="btnColor">Color Mode</button>
             <button class="btnRandom">Random Mode</button>
             <button class="btnEraser">Eraser</button>
             <button class="btnReset">Reset</button>
             <div class="gridSize">
-                <label for="size" class="sizeLable">Grid Size:</label><span class="sizeValue"></span>
-                <input id="size" type="range" class="size" min="1" max="52">
+                <label for="size" class="sizeLable">Grid Size:</label><span class="sizeValue">0x0</span>
+                <input id="size" type="range" class="size" min="1" max="52" value="1">
             </div>
         </div>
         <div class="canvas"></div>

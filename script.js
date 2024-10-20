@@ -9,6 +9,13 @@ let colors = [
     '#e1dfdf','#668c6f', '#e5d5bb','#c46316', '#da413c','#5b2c34', '#c8a2c8', '#8fb0a9',
 ];
 
+document.addEventListener("DOMContentLoaded", () => {
+    const color = document.querySelector(".btnColor"); 
+    const randomColor = document.querySelector(".btnRandom"); 
+    color.addEventListener("click", colorOnHover);
+    randomColor.addEventListener("click", randomColorOnHover);
+});
+
 function clearHoverListeners() {
     const divs = document.querySelectorAll(".div");
     divs.forEach(div => {
@@ -33,15 +40,15 @@ function randomColorOnHover() {
 
 function colorOnHover() {
         clearHoverListeners();
-
+        let colorpicker = document.querySelector('.color');
+        let color = colorpicker.value;
         let divs = document.querySelectorAll(".div");
         divs.forEach((div) => {
             div.addEventListener("mouseenter", () => {
-                div.style.backgroundColor = "aqua";
+                div.style.backgroundColor = color;
             });
         });
-    };
-
+    }
 
 
 function grid() {
@@ -65,19 +72,11 @@ function grid() {
             }
             canvas.appendChild(newDiv);
         }
-        
-        // colorOnHover();
-        // randomColorOnHover();
-        })
+        });
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const color = document.querySelector(".btnColor"); 
-    const randomColor = document.querySelector(".btnRandom"); 
-    color.addEventListener("click", colorOnHover);
-    randomColor.addEventListener("click", randomColorOnHover);
-});
+
 
 grid();
 // colorOnHover();
