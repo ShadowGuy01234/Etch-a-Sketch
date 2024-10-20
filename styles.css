@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-image: url('wallhaven-qzy17d_1920x1080.png');
+    background-color:#ededed;
 }
 
 .div {
@@ -10,6 +10,7 @@ body {
 }
 
 .canvas {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;

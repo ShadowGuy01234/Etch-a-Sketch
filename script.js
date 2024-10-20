@@ -70,6 +70,7 @@ function resetGrid() {
     divs.forEach((div) => {
             div.style.backgroundColor = "transparent";
     });
+    colorOnHover();
 } 
 
 function grid() {
@@ -93,8 +94,10 @@ function grid() {
             }
             canvas.appendChild(newDiv);
         }
+        colorOnHover();
         });
     });
+    
 }
 
 
