@@ -11,9 +11,11 @@ let colors = [
 
 document.addEventListener("DOMContentLoaded", () => {
     const color = document.querySelector(".btnColor"); 
-    const randomColor = document.querySelector(".btnRandom"); 
+    const randomColor = document.querySelector(".btnRandom");
+    const reset = document.querySelector(".btnReset");
     color.addEventListener("click", colorOnHover);
     randomColor.addEventListener("click", randomColorOnHover);
+    reset.addEventListener("click", resetGrid);
 });
 
 function clearHoverListeners() {
@@ -50,6 +52,13 @@ function colorOnHover() {
         });
     }
 
+function resetGrid() {
+    clearHoverListeners();
+    let divs = document.querySelectorAll(".div");
+    divs.forEach((div) => {
+            div.style.backgroundColor = "white";
+    });
+} 
 
 function grid() {
     document.addEventListener("DOMContentLoaded", () => {
